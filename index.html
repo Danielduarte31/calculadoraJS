@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="calculator-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="calc">
+        <h5>Calculadora</h5>
+        <div id="operacoes">
+            <div id="historico"></div>
+            <div id="atual"></div>
+        </div>
+        <div class="buttons-container">
+            <button onclick="apagarTudo()">CE</button>
+            <button onclick="apagarAtual(7)">C</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="numero('/')">/</button>
+            <button class="number" onclick="numero(7)">7</button>
+            <button class="number" onclick="numero(8)">8</button>
+            <button class="number" onclick="numero(9)">9</button>
+            <button onclick="numero('+')">+</button>
+            <button class="number" onclick="numero(4)">4</button>
+            <button class="number" onclick="numero(5)">5</button>
+            <button class="number" onclick="numero(6)">6</button>
+            <button onclick="numero('-')">-</button>
+            <button class="number" onclick="numero(1)">1</button>
+            <button class="number" onclick="numero(2)">2</button>
+            <button class="number" onclick="numero(3)">3</button>
+            <button onclick="numero('*')">*</button>
+            <button class="number" onclick="numero(0)">0</button>
+            <button class="number" onclick="numero('.')">.</button>
+            <button id="equal-button" onclick="calcular()">=</button>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
